@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Switch
+            android:id="@+id/switchEnable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enable"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" />
+
+        <TextView style="@style/Section" android:text="@string/schedule_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/btnEnd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/mode_title" />
+
+        <RadioGroup
+            android:id="@+id/groupMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/radioSilent" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="@string/mode_silent" />
+            <RadioButton android:id="@+id/radioVibrate" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="@string/mode_vibrate" />
+        </RadioGroup>
+
+        <TextView style="@style/Section" android:text="@string/whitelist_title" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/whitelist_desc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/editNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/whitelist_hint"
+                android:inputType="phone" />
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/listNumbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView style="@style/Section" android:text="@string/indicator_title" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/indicator_desc" />
+        <CheckBox
+            android:id="@+id/checkDot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/indicator_show" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/indicator_offset" />
+        <SeekBar
+            android:id="@+id/seekOffset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="300" />
+
+        <TextView style="@style/Section" android:text="@string/language_title" />
+        <RadioGroup
+            android:id="@+id/groupLang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/radioHe" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="@string/lang_he" />
+            <RadioButton android:id="@+id/radioEn" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="@string/lang_en" />
+        </RadioGroup>
+
+        <TextView style="@style/Section" android:text="@string/permissions_title" />
+        <Button android:id="@+id/btnPermDnd" android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button android:id="@+id/btnPermOverlay" android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button android:id="@+id/btnPermPhone" android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

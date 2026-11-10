@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ring Call Control</string>
+    <string name="enable">Enable ringer control</string>
+    <string name="schedule_title">Quiet hours</string>
+    <string name="start_time">From: %1$s</string>
+    <string name="end_time">Until: %1$s</string>
+    <string name="mode_title">During quiet hours the phone will be</string>
+    <string name="mode_silent">Silent</string>
+    <string name="mode_vibrate">Vibrate only</string>
+    <string name="language_title">Language</string>
+    <string name="lang_en">English</string>
+    <string name="lang_he">עברית</string>
+    <string name="indicator_title">Status-bar indicator</string>
+    <string name="indicator_desc">A small red dot is shown in the status bar, next to the Wi-Fi icon, while ringer control is enabled.</string>
+    <string name="indicator_show">Show red dot</string>
+    <string name="indicator_offset">Dot position (move left/right)</string>
+    <string name="whitelist_title">Allowed numbers (ring normally)</string>
+    <string name="whitelist_desc">Calls from these numbers bypass the mute and ring like a normal phone.</string>
+    <string name="whitelist_hint">Phone number</string>
+    <string name="add">Add</string>
+    <string name="remove">Remove</string>
+    <string name="whitelist_empty">No numbers yet</string>
+    <string name="invalid_number">Please enter a valid phone number</string>
+    <string name="permissions_title">Permissions</string>
+    <string name="perm_dnd">Allow Do Not Disturb access</string>
+    <string name="perm_overlay">Allow display over other apps (red dot)</string>
+    <string name="perm_phone">Allow phone &amp; call-log access (allowed numbers)</string>
+    <string name="perm_ok">✓ granted</string>
+    <string name="status_active">Status: quiet hours ACTIVE now</string>
+    <string name="status_idle">Status: outside quiet hours</string>
+    <string name="status_disabled">Status: disabled</string>
+    <string name="notif_channel">Ringer control</string>
+    <string name="notif_title">Ringer control is on</string>
+    <string name="notif_text_active">Quiet hours active (%1$s–%2$s)</string>
+    <string name="notif_text_idle">Quiet hours: %1$s–%2$s</string>
+</resources>
